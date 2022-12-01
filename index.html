@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <title>Codificador</title>
+</head>
+
+<body>
+    <footer>
+        <h1>Mensagem Oculta</h1>
+    </footer>
+    <main>
+        <form class="container" name="formulario">
+
+            <label for="digite">Digite seu texto
+                <input type="text" id="texto">
+                <label for=""> Metódo desejado:
+                    <select id="escolha">
+                        <option value="nulo" id="nulo" disabled selected>Selecione opção</option>
+                        <option id="cifraC" value="cifraC">Cifra de César</option>
+                        <option id="base" value="base">Base64</option>
+                    </select>
+                </label>
+                <div style="display: none;" id="hide">
+                    <input type="number" id="number" default="0" min="1" value="1">
+                </div>
+                <input type="radio" name="r1" id="code" value="code">Codificar
+                <input type="radio" name="r1" id="decode" value="decode">Decodificar
+
+                <hr>
+                <p id="mensagem"></p>
+                <hr>
+
+                <div class="botao">
+                    <button id="button" type="submit">Confirma</button>
+                </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <a href="https://github.com/Gmenezes3" target="_blank">
+            <img src="./assets/img/github-preview.png" alt="Github">
+        </a>
+        <a href="https://www.linkedin.com/in/gustavo-menezes-2bb6541b2/" target="_blank">
+            <img src="./assets/img/linkedin-preview.png" alt="Linkedin">
+        </a>
+        <br>
+        <p>Desenvolvido por Jorge Menezes - Programadores Carioca - Since 2022 ©</p>
+    </footer>
+    <script src="./assets/scripts/script.js"></script>
+</body>
+
+</html>
